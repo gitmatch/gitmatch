@@ -1,3 +1,4 @@
+
 # GitMatch
 With GitMatch we wanted to provide an easy way for maintainers to find developers to contribute in open source.
 
@@ -10,6 +11,27 @@ Before the matching process can begin, we check the repository if it's contribut
 In the matching process, we wanted to get all gender/race/identification characteristics out, only the match scores and geo distance matter.
 
 Once matched, we create an issue in the maintainers repo that friendly asks the developer for contribution.
+
+# Quick Development start
+
+```
+$ git clone https://github.com/nko5/gitmatch.git
+```
+Then create your own credentials file (credentials.js), based on the existing credentials.tmpl.js.
+```
+github: {
+  clientId: '[clientId]',
+  clientSecret: '[clientSecret]',
+  callbackURL: 'http://localhost:3000/auth/callback'
+}
+```
+
+Login to your github account and create an application to get your app clientId and clientSecret.
+
+```
+$ npm install
+$ npm start
+```
 
 
 # NPM scripts
